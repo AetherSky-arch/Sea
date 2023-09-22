@@ -6,16 +6,16 @@
 /*   By: arguez <marvin@42.fr>			    +#+  +:+	   +#+	      */
 /*						  +#+#+#+#+#+	+#+	      */
 /*   Created: 2023/09/20 22:17:02 by arguez	       #+#    #+#	      */
-/*   Updated: 2023/09/20 22:17:38 by arguez           ###   ########.fr       */
+/*   Updated: 2023/09/23 00:26:14 by ae7th            ###   ########.fr       */
 /*									      */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-void    ft_putstr(char *str, int output);
-int	ft_atoi_base(char *str, char *base);
-int	check_base(char *base);
-int	ft_strlen(char *str);
+void	ft_putstr(char *str, int output);
+int		ft_atoi_base(char *str, char *base);
+int		check_base(char *base);
+int		ft_strlen(char *str);
 
 int	count_digit(int nbr, char *base)
 {
@@ -76,7 +76,8 @@ int	main(int argc, char **argv)
 {
 	if (argc != 4)
 	{
-		ft_putstr("Error : Expected 3 arguments : [number] [base_from] [base_to]\n", 2);
+		ft_putstr("Error : Expected 3 arguments : \
+				[number] [base_from] [base_to]\n", 2);
 		return (1);
 	}
 	ft_putstr(ft_convert_base(argv[1], argv[2], argv[3]), 1);

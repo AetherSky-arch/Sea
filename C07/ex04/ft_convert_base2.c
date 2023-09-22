@@ -6,11 +6,11 @@
 /*   By: arguez <marvin@42.fr>			    +#+  +:+	   +#+	      */
 /*						  +#+#+#+#+#+	+#+	      */
 /*   Created: 2023/09/20 22:17:49 by arguez	       #+#    #+#	      */
-/*   Updated: 2023/09/20 22:18:39 by arguez           ###   ########.fr       */
+/*   Updated: 2023/09/23 00:24:52 by ae7th            ###   ########.fr       */
 /*									      */
 /* ************************************************************************** */
 
-void    ft_putstr(char *str, int output);
+void	ft_putstr(char *str, int output);
 
 int	ft_strlen(char *str)
 {

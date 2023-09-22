@@ -6,7 +6,7 @@
 /*   By: arguez <marvin@42.fr>			    +#+  +:+	   +#+	      */
 /*						  +#+#+#+#+#+	+#+	      */
 /*   Created: 2023/09/21 14:23:17 by arguez	       #+#    #+#	      */
-/*   Updated: 2023/09/21 14:23:47 by arguez           ###   ########.fr       */
+/*   Updated: 2023/09/23 00:27:33 by ae7th            ###   ########.fr       */
 /*									      */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 
 char	**ft_split(char *str, char *charset);
 
-int		c_strlen(char *str)
+int	c_strlen(char *str)
 {
-	int len;
+	int	len;
 
 	len = 0;
 	while (str[len])
@@ -25,7 +25,7 @@ int		c_strlen(char *str)
 	return (len);
 }
 
-int		c_strctn(char *str1, char *str2, int at)
+int	c_strctn(char *str1, char *str2, int at)
 {
 	int	len;
 	int	i;
@@ -69,24 +69,4 @@ char	*c_strautojoin(char **strs, char *sep)
 			i = c_strctn(str, sep, i);
 	}
 	return (str);
-}
-
-int		main(void)
-{
-	char **tab;
-
-	tab = ft_split("Ceci&est$un##############################################################################################################################################################succes@!", "&$#@");
-	printf("%s\n", c_strautojoin(tab, " "));
-	tab = ft_split("Success", "CUT");
-	printf("%s\n", c_strautojoin(tab, " "));
-	tab = ft_split("Success", "");
-	printf("%s\n", c_strautojoin(tab, " "));
-	tab = ft_split("", "");
-	printf("OK\n");
-	tab = ft_split("", "CUT");
-	printf("OK\n");
-	tab = ft_split("       ", "	  ");
-	printf("OK\n");
-	tab = ft_split("	 ", "	    ");
-	printf("OK\n");
 }
