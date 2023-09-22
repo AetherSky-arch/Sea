@@ -6,7 +6,7 @@
 /*   By: arguez <marvin@42.fr>			    +#+  +:+	   +#+	      */
 /*						  +#+#+#+#+#+	+#+	      */
 /*   Created: 2023/09/18 22:48:32 by arguez	       #+#    #+#	      */
-/*   Updated: 2023/09/21 16:02:24 by arguez           ###   ########.fr       */
+/*   Updated: 2023/09/23 00:28:34 by ae7th            ###   ########.fr       */
 /*									      */
 /* ************************************************************************** */
 
@@ -67,9 +67,9 @@ void	ft_strcpy(char *dest, char *src)
 
 int	file_catter(int argc, char **argv, int is_option)
 {
-	int	i;
-	int	final;
-	int	file;
+	int		i;
+	int		final;
+	int		file;
 	char	c;
 
 	i = 0;

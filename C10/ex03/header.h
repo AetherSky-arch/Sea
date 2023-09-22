@@ -6,7 +6,7 @@
 /*   By: arguez <marvin@42.fr>			    +#+  +:+	   +#+	      */
 /*						  +#+#+#+#+#+	+#+	      */
 /*   Created: 2023/09/19 13:16:47 by arguez	       #+#    #+#	      */
-/*   Updated: 2023/09/20 17:16:10 by arguez           ###   ########.fr       */
+/*   Updated: 2023/09/23 00:28:09 by ae7th            ###   ########.fr       */
 /*									      */
 /* ************************************************************************** */
 
@@ -35,6 +35,6 @@ void	ascii_printer(char *str);
 char	*byte_converter(int n, char *res);
 int		ft_strcmp(char *s1, char *s2);
 void	ft_strcpy(char *dest, char *src);
-int	file_catter(int n, char **argv, int is_option);
+int		file_catter(int n, char **argv, int is_option);
 
 #endif
