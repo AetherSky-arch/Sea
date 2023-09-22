@@ -10,6 +10,8 @@
 /*									      */
 /* ************************************************************************** */
 
+void    ft_putstr(char *str, int output);
+
 int	ft_strlen(char *str)
 {
 	int	l;
@@ -28,19 +30,28 @@ int	check_base(char *base)
 
 	base_size = ft_strlen(base);
 	if (base_size < 2)
+	{
+		ft_putstr("Error : invalid base\n", 2);
 		return (0);
+	}
 	i = 0;
 	while (base[i])
 	{
 		if (base[i] == '+' || base[i] == '-' || base[i] <= ' '
 			|| base[i] == '\t' || base[i] == '\v' || base[i] == '\f'
 			|| base[i] == '\r' || base[i] == '\n' || base[i] > '~')
+		{
+			ft_putstr("Error : invalid base\n", 2);
 			return (0);
+		}
 		j = i + 1;
 		while (base[j])
 		{
 			if (base[i] == base[j])
+			{
+				ft_putstr("Error : invalid base\n", 2);
 				return (0);
+			}
 			j++;
 		}
 		i++;

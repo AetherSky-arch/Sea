@@ -12,6 +12,7 @@
 
 #include <stdlib.h>
 
+void    ft_putstr(char *str, int output);
 int	ft_atoi_base(char *str, char *base);
 int	check_base(char *base);
 int	ft_strlen(char *str);
@@ -69,4 +70,16 @@ char	*ft_convert_base(char *nbr, char *base_from, char *base_to)
 	ft_convnbr_base(convert, base_to, ptr, count - 2);
 	ptr[count - 1] = '\0';
 	return (ptr);
+}
+
+int	main(int argc, char **argv)
+{
+	if (argc != 4)
+	{
+		ft_putstr("Error : Expected 3 arguments : [number] [base_from] [base_to]\n", 2);
+		return (1);
+	}
+	ft_putstr(ft_convert_base(argv[1], argv[2], argv[3]), 1);
+	ft_putstr("\n", 1);
+	return (0);
 }
