@@ -6,14 +6,14 @@
 /*   By: lmahe <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/16 15:02:39 by lmahe             #+#    #+#             */
-/*   Updated: 2023/09/17 12:35:27 by arguez           ###   ########.fr       */
+/*   Updated: 2023/09/23 00:23:18 by ae7th            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "includes/header.h"
 
 void	ft_print(int board[8][4])
-{	
+{
 	int		i;
 	int		j;
 	char	c;
@@ -61,7 +61,7 @@ void	ft_put_perm_line( int tab[8][4], int x, int perm[24][4], int n)
 		tab[x][i] = perm[n][i];
 		i++;
 	}
-}	
+}
 
 int	ft_sol(int tab[8][4], int x, int perm[24][4], int *flag)
 {

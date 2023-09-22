@@ -6,7 +6,7 @@
 /*   By: lmahe <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/16 13:32:13 by lmahe             #+#    #+#             */
-/*   Updated: 2023/09/17 11:52:56 by lmahe            ###   ########.fr       */
+/*   Updated: 2023/09/23 00:23:50 by ae7th            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ int	ft_check_up_col(int tab[8][4], int col)
 			max = tab[i][col];
 			count++;
 		}
-	}	
+	}
 	return (count);
 }
 
@@ -112,7 +112,7 @@ int	ft_check_sudoku(int tab[8][4], int x)
 	if (x == 0)
 		return (1);
 	while (col < 4)
-	{	
+	{
 		while (i >= 0)
 		{
 			if (tab[i][col] == tab [x][col])
